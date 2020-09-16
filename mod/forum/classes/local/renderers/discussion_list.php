@@ -188,7 +188,7 @@ class discussion_list {
             'cmid' => $cm->id,
             'name' => $forum->get_name(),
             'courseid' => $course->id,
-            'coursename' => $course->shortname,
+            'coursename' => format_string($course->shortname),
             'experimentaldisplaymode' => $displaymode == FORUM_MODE_NESTED_V2,
             'gradingcomponent' => $this->forumgradeitem->get_grading_component_name(),
             'gradingcomponentsubtype' => $this->forumgradeitem->get_grading_component_subtype(),
